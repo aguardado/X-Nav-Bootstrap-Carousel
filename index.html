@@ -12,14 +12,131 @@
     <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
-    </ul>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://docencia.etsit.urjc.es/moodle/" target="_blank">ETSIT</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a target="_blank" href="https://docencia.etsit.urjc.es/moodle/login/index.php">Sign in <span class="sr-only">(current)</span></a></li>
+        <li><a target="_blank" href="http://gsyc.es/">Gsyc</a></li>
+        <li><a target="_blank" href="https://www.urjc.es/estudiar-en-la-urjc/admision">Alumnos URJC</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Carousel
+  ================================================== -->
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="first-slide" src="images/aularioII-edificio.JPG" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Escuela Técnica Superior de Ingeniería de Telecomunicación</h1>
+            <p>Bienvenido a la web de la Escuela Técnica Superior de Ingeniería de Telecomunicación de la Universidad 
+            Rey Juan Carlos de Fuenlabrada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="second-slide" src="images/foto1.jpg" alt="Second slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Laboratorios de Linux y *BSD de la ETSIT.</h1>
+            <p>Los laboratorios de Linux se utilizan en todas las prácticas del GSyC.</p>
+            <p><a class="btn btn-lg btn-primary" target="_blank" href="http://labs.gsyc.es/" role="button">Ver más</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="third-slide" src="images/labosII-edificio.JPG" alt="Third slide">
+        <div class="container">
+          <div class="carousel-caption">
+            <p><a class="btn btn-lg btn-primary" target="_blank" href="https://docencia.etsit.urjc.es/moodle/course/view.php?id=109" 
+            role="button">Moodle de la ETSIT</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><!-- /.carousel -->
+
+
+
+    <div class="jumbotron" id="jumbo">
+      <h1>Universidad Rey Juan Carlos</h1>
+      <p>Estudiar en la URJC ofrece un entorno de aprendizaje y una vida en los campus orientada a impulsar el trabajo y el talento.</p>
+      <p>En la URJC podrás desarrollar todo tu potencial y tener una formación integral, internacional, profesional y humanística.</p>
+      <p><a class="btn btn-primary btn-lg" href="http://www.urjc.es/" target="_blank" role="button">Visitar URJC</a></p>
+    </div>
+
+<div class="container" id="cards">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="images/gregorio.jpg">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="https://github.com/gregoriorobles">Gregorio Robles</a>
+                    </div>
+                    <div class="desc">Associate Professor at URJC</div>
+                    <div class="desc">Co-founder and co-owner of Bitergia</div>
+                </div>
+            </div>
+        </div>
+         <div class="col-sm-6 col-xs-12">
+
+              <div class="card hovercard">
+                  <div class="cardheader">
+
+                  </div>
+                  <div class="avatar">
+                      <img alt="" src="images/jesus.jpg">
+                  </div>
+                  <div class="info">
+                      <div class="title">
+                          <a target="_blank" href="https://github.com/jgbarah">Jesús González Barahona</a>
+                      </div>
+                      <div class="desc">Development researcher free software</div>
+                  </div>
+              </div>
+
+          </div>
+  </div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
